@@ -1,0 +1,55 @@
+Reduced VGG16 for Tiny ImageNet
+
+#----------------HYPERPARAMETERS-----------------------------------------
+- Optimizer: Adam
+- Learning Rate: 0.0001
+- Batch Size: 256
+- Dropout Rate: 0.3 (in the classifier)
+- Activation Function: ReLU (Rectified Linear Unit)
+- Epochs: 60
+
+#--------------------ARCHITECTURE-----------------------------------------
+The architecture follows a reduced VGG16 configuration with fewer channels per layer to lower parameter count.
+It is designed for 64x64x3 input images.
+INPUT: [64x64x3] Image
+
+Feature Extractor:
+- CONV-1: 32 filters, 3x3, stride 1, padding 1 → BN → ReLU
+- Max-Pooling: 2x2, stride 2
+- CONV-2: 32 filters, 3x3, stride 1, padding 1 → BN → ReLU
+- Max-Pooling: 2x2, stride 2
+- CONV-3: 64 filters, 3x3 → BN → ReLU
+- CONV-4: 64 filters, 3x3 → BN → ReLU
+- Max-Pooling: 2x2, stride 2
+- CONV-5: 128 filters, 3x3 → BN → ReLU
+- CONV-6: 128 filters, 3x3 → BN → ReLU
+- CONV-7: 128 filters, 3x3 → BN → ReLU
+- Max-Pooling: 2x2, stride 2
+- CONV-8: 256 filters, 3x3 → BN → ReLU
+- CONV-9: 256 filters, 3x3 → BN → ReLU
+- CONV-10: 256 filters, 3x3 → BN → ReLU
+- Max-Pooling: 2x2, stride 2
+- CONV-11: 256 filters, 3x3 → BN → ReLU
+- CONV-12: 256 filters, 3x3 → BN → ReLU
+- CONV-13: 256 filters, 3x3 → BN → ReLU
+- Max-Pooling: 2x2, stride 2 → Output volume: [2x2x256]
+
+Classifier:
+- Flatten → 1024 features
+- FC-1: 512 units → ReLU → Dropout (p=0.3)
+- FC-2: 512 units → ReLU → Dropout (p=0.3)
+- FC-3: 200 units (for 200 classes)
+
+Loss Function: Cross-Entropy Loss (includes Softmax).
+
+#---------------------DATASET------------------------------------------------
+- Name: Tiny ImageNet
+- Size: 100,000 training images, 10,000 validation images
+- Image Dimensions: 64x64x3
+- Classes: 200
+
+#-----------------------RESULTS----------------------------------------------
+- Epoch 54: Train Acc 50.31%, Val Acc 41.09%, Val Top-5 Error 32.25%
+- Epoch 60 (Final): Train Acc 52.85%, Val Acc 42.32%, Val Top-5 Error 31.66%
+
+Observation: Training accuracy steadily increased over the last 7 epochs, with validation accuracy showing a smaller but consistent improvement, indicating mild overfitting control and stable convergence.
