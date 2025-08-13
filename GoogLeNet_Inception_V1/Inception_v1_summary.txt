@@ -1,0 +1,53 @@
+GoogLeNet (InceptionV1) for Tiny ImageNet
+
+#----------------HYPERPARAMETERS-----------------------------------------
+- Optimizer: Adam
+- Initial Learning Rate: 0.001
+- LR Scheduler: ReduceLROnPlateau (monitors validation loss)
+- Batch Size: 256
+- Weight Decay: 0.0001
+- Dropout Rates: 0.4 (main classifier), 0.7 (auxiliary classifiers)
+- Activation Function: ReLU (Rectified Linear Unit)
+- Epochs: 50
+
+#--------------------ARCHITECTURE-----------------------------------------
+The model is the full GoogLeNet (InceptionV1) architecture, notable for its "Inception module" which performs multi-scale processing for computational efficiency.
+It is designed for 64x64x3 input images.
+INPUT: [64x64x3] Image
+
+1.  Stem Network:
+    - CONV-1: 64 filters, 7x7, stride 2, padding 3 -> BN -> ReLU
+    - Max-Pooling: 3x3, stride 2
+    - CONV-2: 192 filters, 3x3, stride 1, padding 1 -> BN -> ReLU
+    - Max-Pooling: 3x3, stride 2 -> Output volume after stem: [8x8x192]
+
+2.  Inception Stages:
+    - A stack of 9 Inception modules, each containing parallel branches of 1x1, 3x3, and 5x5 convolutions, plus a max-pooling branch. This allows the network to learn features at different scales simultaneously.
+
+3.  Auxiliary Classifiers:
+    - Two smaller classifiers are attached in the middle of the network (after inception4a and inception4d).
+    - Purpose: To provide "deep supervision" by injecting gradients deeper into the network, combating the vanishing gradient problem.
+    - Each consists of Adaptive Pooling, a Conv block, and two Fully-Connected layers.
+
+4.  Final Classifier:
+    - Adaptive Average Pooling: Reduces feature map to [1x1x1024].
+    - Flatten -> 1024 features
+    - Dropout (p=0.4)
+    - Fully-Connected: 1024 -> 200 units (for 200 classes)
+
+Loss Function: Weighted Cross-Entropy Loss from three outputs.
+Loss_Total = Loss_Main + 0.3 * Loss_Aux1 + 0.3 * Loss_Aux2
+
+#---------------------DATASET------------------------------------------------
+- Name: Tiny ImageNet
+- Size: 100,000 training images, 10,000 validation images
+- Image Dimensions: 64x64x3
+- Classes: 200
+
+#-----------------------RESULTS----------------------------------------------
+- Epoch 1: Train Acc 4.37%, Val Acc 7.08%, Val Top-5 Acc 23.21%
+- Epoch 34 (After first LR drop): Train Acc 54.39%, Val Acc 45.12%, Val Top-5 Acc 71.56%
+- Epoch 44 (Best Val Acc): Train Acc 61.29%, Val Acc 46.29%, Val Top-5 Acc 71.84%
+- Epoch 50 (Final): Train Acc 61.35%, Val Acc 46.29%, Val Top-5 Acc 71.74%
+
+Observation: The model demonstrated strong learning, with a significant performance increase after the first learning rate reduction at epoch 33 (from ~41% to ~45% validation accuracy). The final accuracy plateaued around 46%, suggesting the model reached its performance limit under the current training configuration. Further improvements might require techniques like more aggressive data augmentation or fine-tuning the optimizer.
