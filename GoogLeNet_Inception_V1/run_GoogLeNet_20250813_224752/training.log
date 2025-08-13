@@ -1,0 +1,136 @@
+Starting New Run: run_GoogLeNet_20250813_224752
+Device: cuda
+Loading Tiny ImageNet data...
+Initializing GoogLeNet model with 200 classes...
+Starting training for 50 epochs...
+Epoch 01/50 | Time: 214.97s | LR: 0.00100 | Train Loss: 7.6334 | Val Loss: 4.4263
+  -> Train Acc: (Top1: 4.37%, Top5: 15.34%) | Val Acc: (Top1: 7.08%, Top5: 23.21%)
+  -> New best model saved with Val Acc: 7.08%
+Epoch 02/50 | Time: 130.77s | LR: 0.00100 | Train Loss: 6.7583 | Val Loss: 4.0218
+  -> Train Acc: (Top1: 9.64%, Top5: 28.22%) | Val Acc: (Top1: 11.81%, Top5: 33.06%)
+  -> New best model saved with Val Acc: 11.81%
+Epoch 03/50 | Time: 154.50s | LR: 0.00100 | Train Loss: 6.2633 | Val Loss: 3.6801
+  -> Train Acc: (Top1: 13.68%, Top5: 35.98%) | Val Acc: (Top1: 17.15%, Top5: 41.83%)
+  -> New best model saved with Val Acc: 17.15%
+Epoch 04/50 | Time: 200.84s | LR: 0.00100 | Train Loss: 5.9042 | Val Loss: 3.6528
+  -> Train Acc: (Top1: 17.22%, Top5: 41.82%) | Val Acc: (Top1: 17.47%, Top5: 42.95%)
+  -> New best model saved with Val Acc: 17.47%
+Epoch 05/50 | Time: 281.08s | LR: 0.00100 | Train Loss: 5.6666 | Val Loss: 3.9362
+  -> Train Acc: (Top1: 19.96%, Top5: 45.40%) | Val Acc: (Top1: 15.09%, Top5: 37.67%)
+Epoch 06/50 | Time: 182.87s | LR: 0.00100 | Train Loss: 5.4503 | Val Loss: 3.3747
+  -> Train Acc: (Top1: 22.36%, Top5: 48.79%) | Val Acc: (Top1: 22.40%, Top5: 49.30%)
+  -> New best model saved with Val Acc: 22.40%
+Epoch 07/50 | Time: 193.65s | LR: 0.00100 | Train Loss: 5.2857 | Val Loss: 3.4148
+  -> Train Acc: (Top1: 24.17%, Top5: 51.32%) | Val Acc: (Top1: 22.25%, Top5: 49.17%)
+Epoch 08/50 | Time: 200.55s | LR: 0.00100 | Train Loss: 5.1345 | Val Loss: 3.2931
+  -> Train Acc: (Top1: 25.90%, Top5: 53.53%) | Val Acc: (Top1: 24.65%, Top5: 51.18%)
+  -> New best model saved with Val Acc: 24.65%
+Epoch 09/50 | Time: 303.83s | LR: 0.00100 | Train Loss: 4.9981 | Val Loss: 3.0890
+  -> Train Acc: (Top1: 27.74%, Top5: 55.28%) | Val Acc: (Top1: 27.76%, Top5: 55.77%)
+  -> New best model saved with Val Acc: 27.76%
+Epoch 10/50 | Time: 169.82s | LR: 0.00100 | Train Loss: 4.8798 | Val Loss: 3.0921
+  -> Train Acc: (Top1: 29.11%, Top5: 56.96%) | Val Acc: (Top1: 28.19%, Top5: 56.57%)
+  -> New best model saved with Val Acc: 28.19%
+Epoch 11/50 | Time: 187.04s | LR: 0.00100 | Train Loss: 4.7722 | Val Loss: 2.9756
+  -> Train Acc: (Top1: 30.56%, Top5: 58.56%) | Val Acc: (Top1: 30.10%, Top5: 58.54%)
+  -> New best model saved with Val Acc: 30.10%
+Epoch 12/50 | Time: 321.27s | LR: 0.00100 | Train Loss: 4.6766 | Val Loss: 3.0734
+  -> Train Acc: (Top1: 31.87%, Top5: 59.77%) | Val Acc: (Top1: 29.14%, Top5: 57.14%)
+Epoch 13/50 | Time: 180.70s | LR: 0.00100 | Train Loss: 4.5766 | Val Loss: 3.0465
+  -> Train Acc: (Top1: 33.23%, Top5: 61.11%) | Val Acc: (Top1: 29.96%, Top5: 57.47%)
+Epoch 14/50 | Time: 265.55s | LR: 0.00100 | Train Loss: 4.4928 | Val Loss: 2.8288
+  -> Train Acc: (Top1: 34.16%, Top5: 62.17%) | Val Acc: (Top1: 32.87%, Top5: 61.62%)
+  -> New best model saved with Val Acc: 32.87%
+Epoch 15/50 | Time: 156.93s | LR: 0.00100 | Train Loss: 4.4147 | Val Loss: 2.8244
+  -> Train Acc: (Top1: 35.26%, Top5: 63.21%) | Val Acc: (Top1: 33.46%, Top5: 61.95%)
+  -> New best model saved with Val Acc: 33.46%
+Epoch 16/50 | Time: 324.27s | LR: 0.00100 | Train Loss: 4.3418 | Val Loss: 2.7943
+  -> Train Acc: (Top1: 36.28%, Top5: 64.21%) | Val Acc: (Top1: 34.67%, Top5: 62.53%)
+  -> New best model saved with Val Acc: 34.67%
+Epoch 17/50 | Time: 268.03s | LR: 0.00100 | Train Loss: 4.2637 | Val Loss: 2.9290
+  -> Train Acc: (Top1: 37.38%, Top5: 65.18%) | Val Acc: (Top1: 32.57%, Top5: 59.79%)
+Epoch 18/50 | Time: 162.98s | LR: 0.00100 | Train Loss: 4.1953 | Val Loss: 2.6913
+  -> Train Acc: (Top1: 38.16%, Top5: 66.05%) | Val Acc: (Top1: 36.42%, Top5: 64.02%)
+  -> New best model saved with Val Acc: 36.42%
+Epoch 19/50 | Time: 164.21s | LR: 0.00100 | Train Loss: 4.1363 | Val Loss: 2.6430
+  -> Train Acc: (Top1: 38.75%, Top5: 66.72%) | Val Acc: (Top1: 37.75%, Top5: 65.40%)
+  -> New best model saved with Val Acc: 37.75%
+Epoch 20/50 | Time: 187.85s | LR: 0.00100 | Train Loss: 4.0854 | Val Loss: 2.6223
+  -> Train Acc: (Top1: 39.70%, Top5: 67.47%) | Val Acc: (Top1: 38.07%, Top5: 65.96%)
+  -> New best model saved with Val Acc: 38.07%
+Epoch 21/50 | Time: 164.09s | LR: 0.00100 | Train Loss: 4.0114 | Val Loss: 2.8297
+  -> Train Acc: (Top1: 40.74%, Top5: 68.41%) | Val Acc: (Top1: 35.12%, Top5: 62.51%)
+Epoch 22/50 | Time: 156.89s | LR: 0.00100 | Train Loss: 3.9584 | Val Loss: 2.7029
+  -> Train Acc: (Top1: 41.58%, Top5: 69.03%) | Val Acc: (Top1: 37.39%, Top5: 63.99%)
+Epoch 23/50 | Time: 199.36s | LR: 0.00100 | Train Loss: 3.9093 | Val Loss: 2.5994
+  -> Train Acc: (Top1: 42.09%, Top5: 69.67%) | Val Acc: (Top1: 38.67%, Top5: 66.58%)
+  -> New best model saved with Val Acc: 38.67%
+Epoch 24/50 | Time: 259.04s | LR: 0.00100 | Train Loss: 3.8584 | Val Loss: 2.5838
+  -> Train Acc: (Top1: 42.96%, Top5: 70.44%) | Val Acc: (Top1: 39.11%, Top5: 66.41%)
+  -> New best model saved with Val Acc: 39.11%
+Epoch 25/50 | Time: 241.94s | LR: 0.00100 | Train Loss: 3.8111 | Val Loss: 2.6110
+  -> Train Acc: (Top1: 43.65%, Top5: 70.94%) | Val Acc: (Top1: 38.96%, Top5: 66.45%)
+Epoch 26/50 | Time: 259.17s | LR: 0.00100 | Train Loss: 3.7631 | Val Loss: 2.5363
+  -> Train Acc: (Top1: 44.23%, Top5: 71.37%) | Val Acc: (Top1: 40.16%, Top5: 67.88%)
+  -> New best model saved with Val Acc: 40.16%
+Epoch 27/50 | Time: 240.79s | LR: 0.00100 | Train Loss: 3.7270 | Val Loss: 2.6468
+  -> Train Acc: (Top1: 44.73%, Top5: 71.91%) | Val Acc: (Top1: 38.31%, Top5: 65.92%)
+Epoch 28/50 | Time: 246.18s | LR: 0.00100 | Train Loss: 3.6897 | Val Loss: 2.5773
+  -> Train Acc: (Top1: 45.36%, Top5: 72.39%) | Val Acc: (Top1: 39.82%, Top5: 66.58%)
+Epoch 29/50 | Time: 201.12s | LR: 0.00100 | Train Loss: 3.6539 | Val Loss: 2.4963
+  -> Train Acc: (Top1: 45.87%, Top5: 72.95%) | Val Acc: (Top1: 41.03%, Top5: 68.17%)
+  -> New best model saved with Val Acc: 41.03%
+Epoch 30/50 | Time: 197.32s | LR: 0.00100 | Train Loss: 3.6003 | Val Loss: 2.5090
+  -> Train Acc: (Top1: 46.46%, Top5: 73.37%) | Val Acc: (Top1: 40.98%, Top5: 68.14%)
+Epoch 31/50 | Time: 196.39s | LR: 0.00100 | Train Loss: 3.5699 | Val Loss: 2.6510
+  -> Train Acc: (Top1: 47.03%, Top5: 73.80%) | Val Acc: (Top1: 38.71%, Top5: 65.93%)
+Epoch 32/50 | Time: 204.41s | LR: 0.00100 | Train Loss: 3.5327 | Val Loss: 2.5275
+  -> Train Acc: (Top1: 47.43%, Top5: 74.06%) | Val Acc: (Top1: 41.45%, Top5: 68.07%)
+  -> New best model saved with Val Acc: 41.45%
+Epoch 33/50 | Time: 210.31s | LR: 0.00020 | Train Loss: 3.4950 | Val Loss: 2.5281
+  -> Train Acc: (Top1: 48.10%, Top5: 74.77%) | Val Acc: (Top1: 40.85%, Top5: 68.04%)
+Epoch 34/50 | Time: 193.67s | LR: 0.00020 | Train Loss: 3.0661 | Val Loss: 2.3174
+  -> Train Acc: (Top1: 54.39%, Top5: 79.48%) | Val Acc: (Top1: 45.12%, Top5: 71.56%)
+  -> New best model saved with Val Acc: 45.12%
+Epoch 35/50 | Time: 175.05s | LR: 0.00020 | Train Loss: 2.9483 | Val Loss: 2.3282
+  -> Train Acc: (Top1: 55.79%, Top5: 80.54%) | Val Acc: (Top1: 45.54%, Top5: 71.68%)
+  -> New best model saved with Val Acc: 45.54%
+Epoch 36/50 | Time: 186.74s | LR: 0.00020 | Train Loss: 2.8768 | Val Loss: 2.3434
+  -> Train Acc: (Top1: 56.90%, Top5: 81.26%) | Val Acc: (Top1: 45.93%, Top5: 71.54%)
+  -> New best model saved with Val Acc: 45.93%
+Epoch 37/50 | Time: 196.10s | LR: 0.00020 | Train Loss: 2.8307 | Val Loss: 2.3446
+  -> Train Acc: (Top1: 57.62%, Top5: 81.84%) | Val Acc: (Top1: 45.69%, Top5: 71.68%)
+Epoch 38/50 | Time: 194.70s | LR: 0.00004 | Train Loss: 2.7874 | Val Loss: 2.3690
+  -> Train Acc: (Top1: 58.24%, Top5: 82.33%) | Val Acc: (Top1: 45.28%, Top5: 71.70%)
+Epoch 39/50 | Time: 157.98s | LR: 0.00004 | Train Loss: 2.6720 | Val Loss: 2.3288
+  -> Train Acc: (Top1: 60.11%, Top5: 83.47%) | Val Acc: (Top1: 46.03%, Top5: 71.69%)
+  -> New best model saved with Val Acc: 46.03%
+Epoch 40/50 | Time: 173.40s | LR: 0.00004 | Train Loss: 2.6490 | Val Loss: 2.3367
+  -> Train Acc: (Top1: 60.31%, Top5: 83.67%) | Val Acc: (Top1: 46.03%, Top5: 71.60%)
+Epoch 41/50 | Time: 166.26s | LR: 0.00004 | Train Loss: 2.6352 | Val Loss: 2.3272
+  -> Train Acc: (Top1: 60.49%, Top5: 83.88%) | Val Acc: (Top1: 46.16%, Top5: 71.80%)
+  -> New best model saved with Val Acc: 46.16%
+Epoch 42/50 | Time: 155.39s | LR: 0.00001 | Train Loss: 2.6166 | Val Loss: 2.3345
+  -> Train Acc: (Top1: 60.87%, Top5: 84.02%) | Val Acc: (Top1: 45.98%, Top5: 71.83%)
+Epoch 43/50 | Time: 171.62s | LR: 0.00001 | Train Loss: 2.5921 | Val Loss: 2.3339
+  -> Train Acc: (Top1: 61.22%, Top5: 84.19%) | Val Acc: (Top1: 46.28%, Top5: 71.88%)
+  -> New best model saved with Val Acc: 46.28%
+Epoch 44/50 | Time: 182.47s | LR: 0.00001 | Train Loss: 2.5921 | Val Loss: 2.3370
+  -> Train Acc: (Top1: 61.29%, Top5: 84.31%) | Val Acc: (Top1: 46.29%, Top5: 71.84%)
+  -> New best model saved with Val Acc: 46.29%
+Epoch 45/50 | Time: 139.80s | LR: 0.00001 | Train Loss: 2.5816 | Val Loss: 2.3341
+  -> Train Acc: (Top1: 61.28%, Top5: 84.50%) | Val Acc: (Top1: 46.08%, Top5: 71.60%)
+Epoch 46/50 | Time: 142.20s | LR: 0.00000 | Train Loss: 2.5801 | Val Loss: 2.3389
+  -> Train Acc: (Top1: 61.36%, Top5: 84.30%) | Val Acc: (Top1: 46.25%, Top5: 71.90%)
+Epoch 47/50 | Time: 164.86s | LR: 0.00000 | Train Loss: 2.5711 | Val Loss: 2.3341
+  -> Train Acc: (Top1: 61.55%, Top5: 84.41%) | Val Acc: (Top1: 46.16%, Top5: 71.99%)
+Epoch 48/50 | Time: 165.39s | LR: 0.00000 | Train Loss: 2.5755 | Val Loss: 2.3372
+  -> Train Acc: (Top1: 61.57%, Top5: 84.32%) | Val Acc: (Top1: 46.05%, Top5: 71.76%)
+Epoch 49/50 | Time: 152.58s | LR: 0.00000 | Train Loss: 2.5774 | Val Loss: 2.3292
+  -> Train Acc: (Top1: 61.46%, Top5: 84.30%) | Val Acc: (Top1: 46.23%, Top5: 71.85%)
+Epoch 50/50 | Time: 145.25s | LR: 0.00000 | Train Loss: 2.5803 | Val Loss: 2.3380
+  -> Train Acc: (Top1: 61.35%, Top5: 84.42%) | Val Acc: (Top1: 46.29%, Top5: 71.74%)
+
+Training finished in 165m 4s
+Training history saved to run_GoogLeNet_20250813_224752/history.json
+Accuracy plot saved to run_GoogLeNet_20250813_224752/accuracy_plot.png
